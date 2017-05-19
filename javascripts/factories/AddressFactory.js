@@ -1,8 +1,4 @@
-app.run((FIREBASE_CONFIG) => {
-	firebase.initializeApp(FIREBASE_CONFIG);
-});
-
-app.controller("addressCtrl", ($http, $q, $scope, FIREBASE_CONFIG) => {
+app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
 
 	let retrieveFBAddresses = () => {
 		let finalAddresses = [];
@@ -20,16 +16,5 @@ app.controller("addressCtrl", ($http, $q, $scope, FIREBASE_CONFIG) => {
 		});
 	};
 
-	let getAddresses = () => {
-		retrieveFBAddresses()
-		.then(addresses => {$scope.addresses = addresses;})
-		.catch(error => {console.log("Error in getAddresses", error);});
-	};
-
-	$scope.hello = "";
-	$scope.addresses = [];
-
-	getAddresses();
-
+	return {retrieveFBAddresses: retrieveFBAddresses};
 });
-
