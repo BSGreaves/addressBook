@@ -4,7 +4,7 @@
                 "firstName": "Ben",
                 "lastName": "Greaves",
                 "address": "419 Wauford Dr, Nashville TN, 37211",
-                "phone": "615-613-5102",
+                "cellPhone": "615-613-5102",
                 "email": "bsgreaves@gmail.com"
             },
             "1": {
@@ -12,7 +12,7 @@
                 "lastName": "Thomas",
                 "address": "Hollywood",
                 "cellPhone": "202-391-8921",
-        			  "email": "jtt4lyfe@gmail.com"
+        	    "email": "jtt4lyfe@gmail.com"
             },
             "2": {
                 "firstName": "Bernie",

@@ -1,0 +1,17 @@
+<div class="row">
+	<div ng-repeat="address in addresses">
+		<div class="clearfix" ng-if="$index % 3 == 0"></div>
+		<div class="col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">{{address.firstName}} {{address.lastName}}</h3>
+				</div>
+				<div class="panel-body">
+				<p>Address: {{address.address}}</p>
+				<p>Phone #: {{address.cellPhone}}</p>
+				<p>Email: {{address.email}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
