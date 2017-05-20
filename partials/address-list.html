@@ -1,15 +1,23 @@
 <div class="row">
 	<div ng-repeat="address in addresses">
 		<div class="clearfix" ng-if="$index % 3 == 0"></div>
-		<div class="col-sm-4">
+		<div class="col-xs-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">{{address.firstName}} {{address.lastName}}</h3>
 				</div>
 				<div class="panel-body">
-				<p>Address: {{address.address}}</p>
-				<p>Phone #: {{address.cellPhone}}</p>
-				<p>Email: {{address.email}}</p>
+					<p>Address: {{address.address}}</p>
+					<p>Phone #: {{address.cellPhone}}</p>
+					<p>Email: {{address.email}}</p>
+				</div>
+				<div class="row">
+					<div class="col-xs-4">
+						<button class="btn btn-info"><a ng-href="#!/address/edit/{{address.id}}">Edit</a></button>
+					</div>
+					<div class="col-xs-4">
+						<button class="btn btn-warning" ng-click="deleteAddress(address.id)">Delete</button>
+					</div>
 				</div>
 			</div>
 		</div>
