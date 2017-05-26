@@ -5,21 +5,34 @@
                 "lastName": "Greaves",
                 "address": "419 Wauford Dr, Nashville TN, 37211",
                 "cellPhone": "615-613-5102",
-                "email": "bsgreaves@gmail.com"
+                "email": "bsgreaves@gmail.com",
+                "uid": "twnOEjFE92Ur9ez2Efos372RQEf1"
             },
             "1": {
                 "firstName": "Jonathan Taylor",
                 "lastName": "Thomas",
                 "address": "Hollywood",
                 "cellPhone": "202-391-8921",
-        	    "email": "jtt4lyfe@gmail.com"
+        	    "email": "jtt4lyfe@gmail.com",
+                "uid": "PPIPrHxtyLW5Yhk4ONlhq4CVbYo1"
             },
             "2": {
                 "firstName": "Bernie",
                 "lastName": "Sanders",
                 "address": "Nowhere, Vermont",
                 "cellPhone": "391-921-6463",
-                "email": "badass@gmail.com"
+                "email": "badass@gmail.com",
+                "uid": "PPIPrHxtyLW5Yhk4ONlhq4CVbYo1" 
            	}
-       	}
+       	},
+    "users" : {
+        "-Kl1BLWvpW1Lg-bM93J7" : {
+          "uid" : "PPIPrHxtyLW5Yhk4ONlhq4CVbYo1",
+          "username" : "Apple"
+        },
+        "-Kl1CBKCLlvVjgohTLEC" : {
+          "uid" : "twnOEjFE92Ur9ez2Efos372RQEf1",
+          "username" : "Bobble"
+    }
+  }
 }
