@@ -3,7 +3,7 @@ app.controller("EditAddressCtrl", function($location, $routeParams, $scope, Addr
 	$scope.newAddress = {};
 
 	AddressFactory.getSingleAddress($routeParams.id)
-	.then(result => {console.log(result); $scope.newAddress = result;})
+	.then(result => {$scope.newAddress = result;})
 	.catch(error => console.log("error in getSingleAddress", error));
 
 	$scope.saveAddress = () => {

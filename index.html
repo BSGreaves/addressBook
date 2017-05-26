@@ -9,25 +9,8 @@
 		<link rel="stylesheet" href="./styles/main.css">
 	</head>
 	<body ng-app="addressBookApp">
-		<nav class="main-nav navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Address Book</a>
-				</div>
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a ng-href="#!/address/list">View Addresses</a></li>
-						<li><a ng-href="#!/address/new">New Address</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+		
+		<div ng-include="'partials/navbar.html'"></div>
 
 		<div class="container" ng-view>
 
@@ -41,7 +24,10 @@
 		<script src="./javascripts/app.js"></script>
 		<script src="./javascripts/AppConfig.js"></script>
 		<script src="./javascripts/AppConstants.js"></script>
+		<script src="./javascripts/factories/AuthFactory.js"></script>
+		<script src="./javascripts/factories/UserFactory.js"></script>
 		<script src="./javascripts/factories/AddressFactory.js"></script>
+		<script src="./javascripts/controllers/AuthCtrl.js"></script>
 		<script src="./javascripts/controllers/ViewListCtrl.js"></script>
 		<script src="./javascripts/controllers/NewAddressCtrl.js"></script>
 		<script src="./javascripts/controllers/EditAddressCtrl.js"></script>

@@ -1,9 +1,9 @@
 app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
 
-	let retrieveFBAddresses = () => {
+	let retrieveFBAddresses = (userID) => {
 		let finalAddresses = [];
 		return $q((resolve, reject) => {
-			$http.get(`${FIREBASE_CONFIG.databaseURL}/addresses.json`)
+			$http.get(`${FIREBASE_CONFIG.databaseURL}/addresses.json?orderBy="uid"&equalTo="${userID}"`)
 			.then(fbAddresses => {
 				fbAddresses = fbAddresses.data;
 				Object.keys(fbAddresses).forEach(address => {
