@@ -1,0 +1,25 @@
+{
+  "addresses": {
+            "0": {
+                "firstName": "Ben",
+                "lastName": "Greaves",
+                "address": "419 Wauford Dr, Nashville TN, 37211",
+                "cellPhone": "615-613-5102",
+                "email": "bsgreaves@gmail.com"
+            },
+            "1": {
+                "firstName": "Jonathan Taylor",
+                "lastName": "Thomas",
+                "address": "Hollywood",
+                "cellPhone": "202-391-8921",
+        	    "email": "jtt4lyfe@gmail.com"
+            },
+            "2": {
+                "firstName": "Bernie",
+                "lastName": "Sanders",
+                "address": "Nowhere, Vermont",
+                "cellPhone": "391-921-6463",
+                "email": "badass@gmail.com"
+           	}
+       	}
+}
